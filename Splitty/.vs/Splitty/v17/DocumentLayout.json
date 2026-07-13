@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\splitty\\splitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\splitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|solutionrelative:split.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.core\\entities\\expenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\expenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.core\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.core\\split.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\split.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\splitty\\views\\trip\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\views\\trip\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\splitty\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.dll\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.dll\\interfaces\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\interfaces\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\dell\\onedrive\\desktop\\splitty\\splitty\\split.dll\\split.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\split.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Member.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:47:20.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Expenses.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Expenses.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Expenses.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Expenses.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Expenses.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:47:38.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Split.DAL\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Split.DAL\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:48:32.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Trip.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Trip.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Entities\\Trip.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Trip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:47:07.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Views\\Trip\\Index.cshtml",
+              "RelativeDocumentMoniker": "Splitty\\Views\\Trip\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Views\\Trip\\Index.cshtml",
+              "RelativeToolTip": "Splitty\\Views\\Trip\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-12T13:01:50.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TripController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Controllers\\TripController.cs",
+              "RelativeDocumentMoniker": "Splitty\\Controllers\\TripController.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Controllers\\TripController.cs",
+              "RelativeToolTip": "Splitty\\Controllers\\TripController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:55:40.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TripService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Services\\TripService.cs",
+              "RelativeDocumentMoniker": "Split.DLL\\Services\\TripService.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Services\\TripService.cs",
+              "RelativeToolTip": "Split.DLL\\Services\\TripService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:50:07.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Split.Core",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj",
+              "RelativeDocumentMoniker": "Split.Core\\Split.Core.csproj",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj",
+              "RelativeToolTip": "Split.Core\\Split.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-12T12:45:26.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Splitty",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj",
+              "RelativeDocumentMoniker": "Splitty\\Splitty.csproj",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj",
+              "RelativeToolTip": "Splitty\\Splitty.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-12T12:43:50.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITripService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Interfaces\\ITripService.cs",
+              "RelativeDocumentMoniker": "Split.DLL\\Interfaces\\ITripService.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Interfaces\\ITripService.cs",
+              "RelativeToolTip": "Split.DLL\\Interfaces\\ITripService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:49:47.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Split.BLL",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+              "RelativeDocumentMoniker": "Split.DLL\\Split.BLL.csproj",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+              "RelativeToolTip": "Split.DLL\\Split.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-12T12:41:09.854Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
