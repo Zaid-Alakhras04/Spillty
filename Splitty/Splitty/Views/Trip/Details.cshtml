@@ -8,7 +8,15 @@
     <div class="row align-items-center mb-4">
         <div class="col">
             <a href="/Trip/Index" class="btn btn-sm btn-outline-secondary mb-2">&larr; Back to Dashboard</a>
-            <h1 class="display-5 fw-bold text-dark">@Model.Name</h1>
+
+            <!-- Updated Title Section to include the Share Button side-by-side -->
+            <div class="d-flex align-items-center mb-2">
+                <h1 class="display-5 fw-bold text-dark mb-0">@Model.Name</h1>
+                <button class="btn btn-outline-success fw-bold rounded-pill px-4 ms-3" data-bs-toggle="modal" data-bs-target="#shareTripModal">
+                    ✉️ Share Summary
+                </button>
+            </div>
+
             <p class="text-muted fs-5">
                 Group Members:
                 @string.Join(", ", Model.Members.Select(m => m.Name))
@@ -34,8 +42,6 @@
                     var totalPaid = Model.Expense.Where(e => e.MemberId == member.Id).Sum(e => e.Amount);
 
                     // 2. Calculate their exact share from the junction table
-                    // NOTE: If your property is named 'ExpenseShares' instead of 'Shares', change 'e.Shares' to 'e.ExpenseShares' below.
-                    // NOTE: If the column is named 'OwedAmount' instead of 'Amount', change 's.Amount' to 's.OwedAmount'.
                     var totalOwed = Model.Expense.SelectMany(e => e.Shares).Where(s => s.MemberId == member.Id).Sum(s => s.OwnedAmount);
 
                     // 3. Calculate their net balance
@@ -108,6 +114,9 @@
     </div>
 </div>
 
+<!-- ========================================================= -->
+<!-- ADD EXPENSE MODAL                                         -->
+<!-- ========================================================= -->
 <div class="modal fade" id="addExpenseModal" tabindex="-1" aria-hidden="true" style="background: rgba(0,0,0,0.5);">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 rounded-4 shadow-lg">
@@ -166,6 +175,45 @@
                     <button type="button" class="btn btn-success rounded-pill px-4 fw-bold" onclick="validateAndSubmit()">Save Expense</button>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- SHARE TRIP MODAL (NEW)                                    -->
+<!-- ========================================================= -->
+<div class="modal fade" id="shareTripModal" tabindex="-1" aria-hidden="true" style="background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(4px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+
+            <div class="modal-header border-0 px-4 pt-4">
+                <h4 class="modal-title fw-bold text-dark">Share Trip Summary</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <form action="/Trip/ShareTrip" method="POST">
+                <div class="modal-body p-4">
+
+                    <!-- We secretly pass the trip ID to the controller -->
+                    <input type="hidden" name="tripId" value="@Model.Id" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-secondary">Friend's Email Address</label>
+                        <input type="email" name="email" class="form-control form-control-lg rounded-3 border-light-subtle bg-light" placeholder="name@example.com" required />
+
+                        <small class="text-danger mt-2 d-block fw-bold">
+                            *Testing Note: Because you are on the Resend free tier, you can only send emails to your verified account email address.
+                        </small>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer border-0 p-4 bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-link text-secondary text-decoration-none fw-bold" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success rounded-pill px-4 fw-bold">Send Email</button>
+                </div>
+            </form>
+
         </div>
     </div>
 </div>

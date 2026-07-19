@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Resend" Version="0.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Split.Core\Split.Core.csproj" />
     <ProjectReference Include="..\Split.DAL\Split.DAL.csproj" />
   </ItemGroup>

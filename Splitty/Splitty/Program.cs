@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Resend;
 using Split.BLL.Interfaces;
 using Split.BLL.Services;
 using Split.DAL;
@@ -9,7 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ITripService, TripService>();
-
+builder.Services.AddOptions();
+builder.Services.AddHttpClient<ResendClient>();
+builder.Services.Configure<ResendClientOptions>(options =>
+{
+    options.ApiToken = builder.Configuration["Resend:ApiKey"]!;
+});
+builder.Services.AddTransient<IResend, ResendClient>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Split.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce44f9b1e283c5438c3201d6def8727ede0568f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+240a38d617b8d934c14dd036f502ea6cd809ae45")]
 [assembly: System.Reflection.AssemblyProductAttribute("Split.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Split.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

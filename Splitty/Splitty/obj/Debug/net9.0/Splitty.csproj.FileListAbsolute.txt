@@ -236,3 +236,4 @@ C:\Users\Administrator\Desktop\Spillty\Splitty\Splitty\obj\Debug\net9.0\ref\Spli
 C:\Users\Administrator\Desktop\Spillty\Splitty\Splitty\obj\Debug\net9.0\compressed\iw98l5sbjt-{0}-vnuilf8u5t-vnuilf8u5t.gz
 C:\Users\Administrator\Desktop\Spillty\Splitty\Splitty\obj\Debug\net9.0\compressed\w1n2vs7xxc-{0}-zu1fholkmn-zu1fholkmn.gz
 C:\Users\Administrator\Desktop\Spillty\Splitty\Splitty\obj\Debug\net9.0\compressed\3e60oymns2-{0}-1uo33j1hb6-1uo33j1hb6.gz
+C:\Users\Administrator\Desktop\Spillty\Splitty\Splitty\bin\Debug\net9.0\Resend.dll
