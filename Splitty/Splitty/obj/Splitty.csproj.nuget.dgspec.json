@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj",
         "projectName": "Split.Core",
-        "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,10 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -44,10 +46,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -65,24 +68,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\Split.DAL.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Split.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\Split.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Split.DAL.csproj",
         "projectName": "Split.DAL",
-        "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\Split.DAL.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Split.DAL.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,14 +94,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj": {
-                "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj"
               }
             }
           }
@@ -113,10 +118,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
@@ -146,24 +152,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj",
         "projectName": "Split.BLL",
-        "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,17 +178,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj": {
-                "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj"
               },
-              "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\Split.DAL.csproj": {
-                "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DAL\\Split.DAL.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Split.DAL.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Split.DAL.csproj"
               }
             }
           }
@@ -197,10 +205,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -218,24 +227,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj",
         "projectName": "Splitty",
-        "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\Splitty.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Splitty\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -244,17 +253,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj": {
-                "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.Core\\Split.Core.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj"
               },
-              "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj": {
-                "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\Splitty\\Splitty\\Split.DLL\\Split.BLL.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj"
               }
             }
           }
@@ -269,10 +280,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
@@ -301,7 +313,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

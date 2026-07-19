@@ -1,0 +1,175 @@
+﻿@model Split.Core.Entities.Trip
+
+@{
+    ViewData["Title"] = Model.Name + " - Details";
+}
+
+<div class="container mt-5">
+    <div class="row align-items-center mb-4">
+        <div class="col">
+            <a href="/Trip/Index" class="btn btn-sm btn-outline-secondary mb-2">&larr; Back to Dashboard</a>
+            <h1 class="display-5 fw-bold text-dark">@Model.Name</h1>
+            <p class="text-muted fs-5">
+                Group Members:
+                @string.Join(", ", Model.Members.Select(m => m.Name))
+            </p>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-success btn-lg rounded-pill shadow-sm fw-bold px-4" onclick="openExpenseModal()">
+                + Add an Expense
+            </button>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- START OF ADDED BALANCES SECTION                           -->
+    <!-- ========================================================= -->
+    <div class="card border-0 shadow-sm rounded-4 mb-4 bg-light">
+        <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Current Balances</h4>
+            <div class="row">
+                @foreach (var member in Model.Members)
+                {
+                    // 1. Calculate how much they paid out of pocket
+                    var totalPaid = Model.Expense.Where(e => e.MemberId == member.Id).Sum(e => e.Amount);
+
+                    // 2. Calculate their exact share from the junction table
+                    // NOTE: If your property is named 'ExpenseShares' instead of 'Shares', change 'e.Shares' to 'e.ExpenseShares' below.
+                    // NOTE: If the column is named 'OwedAmount' instead of 'Amount', change 's.Amount' to 's.OwedAmount'.
+                    var totalOwed = Model.Expense.SelectMany(e => e.Shares).Where(s => s.MemberId == member.Id).Sum(s => s.OwnedAmount);
+
+                    // 3. Calculate their net balance
+                    var balance = totalPaid - totalOwed;
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center py-4">
+                                <h5 class="fw-bold text-dark mb-2">@member.Name</h5>
+                                @if (balance > 0)
+                                {
+                                    <span class="text-success fw-bold fs-5">Gets back $@balance.ToString("0.00")</span>
+                                }
+                                else if (balance < 0)
+                                {
+                                    <span class="text-danger fw-bold fs-5">Owes $@Math.Abs(balance).ToString("0.00")</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted fw-bold fs-5">Settled Up</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================= -->
+    <!-- END OF ADDED BALANCES SECTION                             -->
+    <!-- ========================================================= -->
+
+    <div class="card border-0 shadow-sm rounded-4 mb-5">
+        <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Expense History</h4>
+
+            @if (Model.Expense == null || !Model.Expense.Any())
+            {
+                <div class="text-center py-4 text-muted">
+                    <p class="mb-0 fs-5">No expenses logged yet. Add your first bill to start splitting!</p>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Description</th>
+                                <th>Paid By</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var expense in Model.Expense)
+                            {
+                                var payerName = Model.Members.FirstOrDefault(m => m.Id == expense.MemberId)?.Name ?? "Unknown";
+
+                                <tr>
+                                    <td class="fw-bold">@expense.Name</td>
+                                    <td>@payerName</td>
+                                    <td class="text-danger fw-bold">$@expense.Amount.ToString("0.00")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addExpenseModal" tabindex="-1" aria-hidden="true" style="background: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+            <div class="modal-header bg-success text-white border-0 px-4 pt-4">
+                <h5 class="modal-title fw-bold">Log a New Expense</h5>
+                <button type="button" class="btn-close btn-close-white" onclick="closeExpenseModal()"></button>
+            </div>
+
+            <form id="expenseForm" action="/Trip/AddExpense/@Model.Id" method="POST">
+                <div class="modal-body p-4">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">What was this for?</label>
+                        <input type="text" name="description" class="form-control bg-light" placeholder="e.g., Dinner, Gas, Hotel" required />
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Total Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">$</span>
+                                <input type="number" step="0.01" name="amount" class="form-control bg-light" required />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Who Paid?</label>
+                            <select name="paidById" class="form-select bg-light" required>
+                                <option value="">Select person...</option>
+                                @foreach (var member in Model.Members)
+                                {
+                                    <option value="@member.Id">@member.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Who is splitting this bill?</label>
+                        <div class="p-3 bg-light rounded border">
+                            @foreach (var member in Model.Members)
+                            {
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input split-checkbox" type="checkbox" name="splitWithMemebrIDs" value="@member.Id" id="member_@member.Id" checked>
+                                    <label class="form-check-label" for="member_@member.Id">
+                                        @member.Name
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                        <small class="text-danger d-none" id="checkboxError">You must select at least one person to split the bill with.</small>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0 p-4 bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" onclick="closeExpenseModal()">Cancel</button>
+                    <button type="button" class="btn btn-success rounded-pill px-4 fw-bold" onclick="validateAndSubmit()">Save Expense</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/trip-details.js" asp-append-version="true"></script>
+}

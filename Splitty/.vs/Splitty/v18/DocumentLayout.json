@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.core\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.core\\entities\\expenseshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\expenseshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.core\\entities\\expenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\entities\\expenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.dll\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.dll\\interfaces\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\interfaces\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|solutionrelative:split.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\views\\trip\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\views\\trip\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\views\\trip\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\views\\trip\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.dll\\split.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{407F7F9D-C536-40FE-9E3C-8FF31563FAAA}|Split.DLL\\Split.BLL.csproj|solutionrelative:split.dll\\split.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\wwwroot\\js\\trip-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\wwwroot\\js\\trip-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\splitty\\splitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F63162D-7731-4DF3-AF8F-2B4B333B3927}|Splitty\\Splitty.csproj|solutionrelative:splitty\\splitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.core\\split.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C09EA1DA-3E9B-45C4-BBCA-04DA64345720}|Split.Core\\Split.Core.csproj|solutionrelative:split.core\\split.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|c:\\users\\administrator\\desktop\\spillty\\splitty\\split.dal\\migrations\\20260714140552_addexpensejunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A633DB5-36F8-4A2D-982F-4E125A63AB34}|Split.DAL\\Split.DAL.csproj|solutionrelative:split.dal\\migrations\\20260714140552_addexpensejunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Split.DAL\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Split.DAL\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Expenses.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Expenses.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Expenses.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Expenses.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Expenses.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TripService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Services\\TripService.cs",
+              "RelativeDocumentMoniker": "Split.DLL\\Services\\TripService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Services\\TripService.cs",
+              "RelativeToolTip": "Split.DLL\\Services\\TripService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITripService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Interfaces\\ITripService.cs",
+              "RelativeDocumentMoniker": "Split.DLL\\Interfaces\\ITripService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Interfaces\\ITripService.cs",
+              "RelativeToolTip": "Split.DLL\\Interfaces\\ITripService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExpenseShare.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\ExpenseShare.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\ExpenseShare.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\ExpenseShare.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\ExpenseShare.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T13:56:19.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Member.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Member.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:34.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Trip.cs",
+              "RelativeDocumentMoniker": "Split.Core\\Entities\\Trip.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Entities\\Trip.cs",
+              "RelativeToolTip": "Split.Core\\Entities\\Trip.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Program.cs",
+              "RelativeDocumentMoniker": "Splitty\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Program.cs",
+              "RelativeToolTip": "Splitty\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T07:09:49.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Splitty\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Splitty\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-14T12:07:00.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Trip\\Index.cshtml",
+              "RelativeDocumentMoniker": "Splitty\\Views\\Trip\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Trip\\Index.cshtml",
+              "RelativeToolTip": "Splitty\\Views\\Trip\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwDgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T19:21:35.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TripController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Controllers\\TripController.cs",
+              "RelativeDocumentMoniker": "Splitty\\Controllers\\TripController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Controllers\\TripController.cs",
+              "RelativeToolTip": "Splitty\\Controllers\\TripController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAApwC8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:21:35.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Split.BLL.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+              "RelativeDocumentMoniker": "Split.DLL\\Split.BLL.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DLL\\Split.BLL.csproj",
+              "RelativeToolTip": "Split.DLL\\Split.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-13T19:21:35.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20260714140552_AddExpenseJunction.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Migrations\\20260714140552_AddExpenseJunction.cs",
+              "RelativeDocumentMoniker": "Split.DAL\\Migrations\\20260714140552_AddExpenseJunction.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.DAL\\Migrations\\20260714140552_AddExpenseJunction.cs",
+              "RelativeToolTip": "Split.DAL\\Migrations\\20260714140552_AddExpenseJunction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T14:05:52.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Trip\\Details.cshtml",
+              "RelativeDocumentMoniker": "Splitty\\Views\\Trip\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Views\\Trip\\Details.cshtml",
+              "RelativeToolTip": "Splitty\\Views\\Trip\\Details.cshtml",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-15T08:44:34.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Splitty\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Splitty\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-15T08:54:41.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\appsettings.json",
+              "RelativeDocumentMoniker": "Splitty\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\appsettings.json",
+              "RelativeToolTip": "Splitty\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-14T07:07:40.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "trip-details.js",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\wwwroot\\js\\trip-details.js",
+              "RelativeDocumentMoniker": "Splitty\\wwwroot\\js\\trip-details.js",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\wwwroot\\js\\trip-details.js",
+              "RelativeToolTip": "Splitty\\wwwroot\\js\\trip-details.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-15T10:36:42.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Splitty.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj",
+              "RelativeDocumentMoniker": "Splitty\\Splitty.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Splitty.csproj",
+              "RelativeToolTip": "Splitty\\Splitty.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-13T19:21:35.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Split.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj",
+              "RelativeDocumentMoniker": "Split.Core\\Split.Core.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Split.Core\\Split.Core.csproj",
+              "RelativeToolTip": "Split.Core\\Split.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-13T19:21:35.102Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\bin\Debug\net9.0\Split.Core.deps.json
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\bin\Debug\net9.0\Split.Core.dll
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\bin\Debug\net9.0\Split.Core.pdb
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.sourcelink.json
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.dll
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\refint\Split.Core.dll
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\Split.Core.pdb
+C:\Users\Administrator\Desktop\Spillty\Splitty\Split.Core\obj\Debug\net9.0\ref\Split.Core.dll

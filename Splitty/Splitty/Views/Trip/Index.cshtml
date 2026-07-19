@@ -1,5 +1,112 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<Split.Core.Entities.Trip>
+
 @{
+    ViewData["Title"] = "My Adventure Groups";
+}
+
+<div class="container mt-5">
+    <div class="row align-items-center mb-5">
+        <div class="col">
+            <h1 class="display-5 fw-extrabold text-dark tracking-tight">Adventure Groups</h1>
+            <p class="text-muted fs-5 mb-0">Track shared memories and split the bills with friends without the headache.</p>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm fw-bold" onclick="openCreateTripModal()">
+                + Start a Trip
+            </button>
+        </div>
+    </div>
+
+    <div class="row" id="tripsGrid">
+        @if (Model == null || !Model.Any())
+        {
+            <div class="col-12 text-center py-5">
+                <div class="p-5 rounded-4 bg-light border border-dashed">
+                    <div class="fs-1 mb-3">✈️</div>
+                    <h3 class="fw-bold text-dark">No active groups yet</h3>
+                    <p class="text-muted">Gather your crew, plan your expenses, and kickstart your next trip together.</p>
+                    <button class="btn btn-outline-primary rounded-pill px-4 mt-2 fw-bold" onclick="openCreateTripModal()">
+                        Create your first group
+                    </button>
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var trip in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-shadow transition-all">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-light text-primary rounded-pill px-3 py-2 align-self-start mb-3 fw-bold">Active Crew</span>
+                            <h3 class="card-title fw-bold text-dark mb-2">@trip.Name</h3>
+
+                            <div class="d-flex align-items-center text-secondary mb-4 mt-2">
+                                <span class="fs-5 me-2">👥</span>
+                                <span class="fw-medium">@trip.Members.Count members sharing expenses</span>
+                            </div>
+
+                            <div class="mt-auto d-flex gap-2">
+                                <!-- Existing View Button -->
+                                <a href="/Trip/Details/@trip.Id" class="btn btn-light text-primary w-100 rounded-pill fw-bold py-2">
+                                    View
+                                </a>
+
+                                <!-- New Delete Form -->
+                                <form action="/Trip/DeleteTrip/@trip.Id" method="POST" class="w-100" onsubmit="return confirm('Are you sure you want to delete this trip? All expenses will be permanently lost!');">
+                                    <button type="submit" class="btn btn-outline-danger w-100 rounded-pill fw-bold py-2">
+                                        Delete
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<div class="modal fade" id="createTripModal" tabindex="-1" aria-hidden="true" style="background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(4px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+            <div class="modal-header border-0 px-4 pt-4">
+                <h4 class="modal-title fw-bold text-dark">Create a New Group</h4>
+                <button type="button" class="btn-close" onclick="closeCreateTripModal()"></button>
+            </div>
+
+            <form action="/Trip/Create" method="POST">
+                <div class="modal-body p-4">
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold text-secondary">Group Name</label>
+                        <input type="text" name="name" class="form-control form-control-lg rounded-3 border-light-subtle bg-light" placeholder="Trip Name" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <label class="form-label fw-semibold text-secondary mb-0">Who is coming with you?</label>
+                            <button type="button" class="btn btn-sm btn-link text-primary text-decoration-none fw-bold" onclick="addMemberInputRow()">+ Add Member</button>
+                        </div>
+
+                        <div id="memberInputsContainer">
+                            <div class="input-group mb-2 member-input-row">
+                                <input type="text" name="memberNames" class="form-control rounded-3 border-light-subtle bg-light" placeholder="Name" required />
+                                <button type="button" class="btn btn-outline-danger border-0 px-3" onclick="removeMemberInputRow(this)">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0 p-4 bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-link text-secondary text-decoration-none fw-bold" onclick="closeCreateTripModal()">Nevermind</button>
+                    <button type="submit" class="btn btn-primary rounded-pill px-4 fw-bold">Build Group</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/trips.js" asp-append-version="true"></script>
 }
