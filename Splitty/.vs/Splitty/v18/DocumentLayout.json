@@ -106,8 +106,7 @@
               "RelativeToolTip": "Split.DLL\\Services\\EmailService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-19T11:46:25.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-19T11:46:25.852Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "Splitty\\Splitty.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-13T19:21:35.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.247Z"
             },
             {
               "$type": "Document",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "Splitty\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T07:09:49.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T07:09:49.795Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "Split.DLL\\Services\\TripService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:35.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.097Z"
             },
             {
               "$type": "Document",
@@ -158,8 +154,7 @@
               "RelativeToolTip": "Split.DLL\\Interfaces\\IEmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-19T11:41:32.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-19T11:41:32.943Z"
             },
             {
               "$type": "Document",
@@ -169,7 +164,7 @@
               "RelativeDocumentMoniker": "Splitty\\Controllers\\TripController.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Spillty\\Splitty\\Splitty\\Controllers\\TripController.cs",
               "RelativeToolTip": "Splitty\\Controllers\\TripController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAArwA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAArwAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-13T19:21:35.095Z",
               "EditorCaption": ""
@@ -184,8 +179,7 @@
               "RelativeToolTip": "Splitty\\Views\\Trip\\Details.cshtml",
               "ViewState": "AgIAAMwAAAAAAAAAAAAYwN4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T08:44:34.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-15T08:44:34.337Z"
             },
             {
               "$type": "Document",
@@ -197,8 +191,7 @@
               "RelativeToolTip": "Split.Core\\Entities\\Trip.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIAwwAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:35.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.088Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "Split.DLL\\Interfaces\\ITripService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:35.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.274Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "Splitty\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-14T07:07:40.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T07:07:40.315Z"
             },
             {
               "$type": "Document",
@@ -236,8 +227,7 @@
               "RelativeToolTip": "Split.DAL\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:35.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.085Z"
             },
             {
               "$type": "Document",
@@ -249,8 +239,7 @@
               "RelativeToolTip": "Split.Core\\Entities\\Expenses.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAowAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:35.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.083Z"
             },
             {
               "$type": "Document",
@@ -262,8 +251,7 @@
               "RelativeToolTip": "Split.Core\\Entities\\ExpenseShare.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA7wBAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T13:56:19.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T13:56:19.931Z"
             },
             {
               "$type": "Document",
@@ -275,8 +263,7 @@
               "RelativeToolTip": "Split.Core\\Entities\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:21:34.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:34.988Z"
             },
             {
               "$type": "Document",
@@ -288,8 +275,7 @@
               "RelativeToolTip": "Splitty\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABcAAAAAAAAAAIBJwCIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-14T12:07:00.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T12:07:00.83Z"
             },
             {
               "$type": "Document",
@@ -301,8 +287,7 @@
               "RelativeToolTip": "Splitty\\Views\\Trip\\Index.cshtml",
               "ViewState": "AgIAACUAAAAAAAAAAAAuwDgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T19:21:35.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.092Z"
             },
             {
               "$type": "Document",
@@ -314,8 +299,7 @@
               "RelativeToolTip": "Split.DLL\\Split.BLL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-13T19:21:35.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.279Z"
             },
             {
               "$type": "Document",
@@ -327,8 +311,7 @@
               "RelativeToolTip": "Split.DAL\\Migrations\\20260714140552_AddExpenseJunction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T14:05:52.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T14:05:52.823Z"
             },
             {
               "$type": "Document",
@@ -340,8 +323,7 @@
               "RelativeToolTip": "Splitty\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-15T08:54:41.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-15T08:54:41.446Z"
             },
             {
               "$type": "Document",
@@ -353,8 +335,7 @@
               "RelativeToolTip": "Splitty\\wwwroot\\js\\trip-details.js",
               "ViewState": "AgIAAAcAAAAAAAAAAAAIwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-15T10:36:42.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-15T10:36:42.495Z"
             },
             {
               "$type": "Document",
@@ -366,8 +347,7 @@
               "RelativeToolTip": "Split.Core\\Split.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-13T19:21:35.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T19:21:35.102Z"
             }
           ]
         }
