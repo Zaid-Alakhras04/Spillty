@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Splitty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+639b8385fcd220913900d168ff2235c17564bf9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9c1f001f5c17ce2716a6c14c42bc685f120cdc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Splitty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Splitty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

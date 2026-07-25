@@ -10,11 +10,12 @@ namespace Splitty.Controllers
     {
         private readonly ITripService _tripService;
         private readonly IEmailService _emailService;
-
-        public TripController(ITripService tripService, IEmailService emailService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public TripController(ITripService tripService, IEmailService emailService , IWebHostEnvironment webHostEnvironment)
         {
             _tripService = tripService;
             _emailService = emailService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -40,26 +41,51 @@ namespace Splitty.Controllers
                 return NotFound();
 
             }
-            else
-            {
-                return View(trip);
-            }
+
+            ViewBag.Settlements = _tripService.CalculateOptimizedSettlements(id);
+
+            return View(trip);
+            
 
         }
 
         [HttpPost]
-        public IActionResult AddExpense(int id, string description, int paidById, decimal amount, List<int> splitWithMemebrIDs)
+        public IActionResult AddExpense(int id, string Description, int paidById, Dictionary<int, decimal> memberAmounts)
         {
-            _tripService.AddExpense(id, description, paidById, amount, splitWithMemebrIDs);
+            var actualAmounts = memberAmounts
+        .Where(m => m.Value > 0)
+        .ToDictionary(m => m.Key, m => m.Value);
+
+            if (actualAmounts.Any())
+            {
+                // 3. Pass 'id' to the service
+                _tripService.AddExpense(id, Description, paidById, actualAmounts);
+            }
+
+            // 4. Redirect back to the trip using 'id'
             return RedirectToAction("Details", new { id = id });
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public IActionResult DeleteTrip(int id)
         {
             _tripService.DeleteTrip(id);
             return RedirectToAction("Index");
         }
+        */
+
+        [HttpPost]
+        public IActionResult AddMember(int tripId, string memberName)
+        {
+            if (!string.IsNullOrWhiteSpace(memberName))
+            {
+                _tripService.AddMemberToTrip(tripId, memberName);
+            }
+
+            return RedirectToAction("Details", new { id = tripId });
+        }
+
+
 
         [HttpPost]
         public async Task<IActionResult> ShareTrip(int tripId, string email)
@@ -82,6 +108,42 @@ namespace Splitty.Controllers
             // 4. Send the email!
             await _emailService.SendTripSummaryAsync(email, trip.Name ?? "Unnamed Trip", totalCost, participants, shareableLink);
             // 5. Redirect the user back to the trip dashboard
+            return RedirectToAction("Details", new { id = tripId });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UploadReceipt(int tripId, IFormFile receiptImage)
+        {
+            if (receiptImage != null && receiptImage.Length > 0)
+            {
+                // Create a secure, unique filename
+                string fileExtension = Path.GetExtension(receiptImage.FileName);
+                string uniqueFileName = Guid.NewGuid().ToString() + fileExtension;
+
+                // Map to wwwroot/uploads/receipts
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", "receipts");
+
+                // Create the folder if it doesn't exist yet
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                // The full physical path on the hard drive
+                string physicalFilePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                // Copy the file to the folder
+                using (var fileStream = new FileStream(physicalFilePath, FileMode.Create))
+                {
+                    await receiptImage.CopyToAsync(fileStream);
+                }
+
+                // Save the relative URL to the database
+                string databasePath = $"/uploads/receipts/{uniqueFileName}";
+                _tripService.AddReciptImage(tripId, databasePath);
+            }
+
             return RedirectToAction("Details", new { id = tripId });
         }
 

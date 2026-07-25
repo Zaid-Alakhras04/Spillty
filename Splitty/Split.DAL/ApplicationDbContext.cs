@@ -16,7 +16,7 @@ namespace Split.DAL
         public DbSet<Member> Members { get; set; }
         public DbSet<Expenses> Expenses { get; set; }
         public DbSet<ExpenseShare> ExpenseShares { get; set; }
-
+        public DbSet<ReciptImage> Images { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

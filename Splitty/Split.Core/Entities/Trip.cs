@@ -12,6 +12,8 @@ namespace Split.Core.Entities
         public string? Name { get; set; }
         public List<Member> Members { get; set; } = new List<Member>();
         public List<Expenses> Expense { get; set; } = new List<Expenses>();
+        public ICollection<ReciptImage> Images { get; set; } = new List<ReciptImage>();
+
 
     }
 }

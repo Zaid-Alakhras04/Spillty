@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Split.Core.DTOs;
+using Split.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Split.Core.Entities;
 
 
 namespace Split.BLL.Interfaces
@@ -16,8 +17,13 @@ namespace Split.BLL.Interfaces
 
         void CreateTrip(string name , List<string> memberNames);
 
-        void AddExpense(int tripId, string Description, int paidById , decimal amount, List<int> splitWithMemebrIDs);
+        void AddExpense(int tripId, string Description, int paidById , Dictionary<int, decimal> memberAmounts);
 
-        void DeleteTrip(int tripId);
+        public List<DebtSettelment> CalculateOptimizedSettlements(int tripId);
+
+        void AddMemberToTrip(int tripId, string memberName);
+        void AddReciptImage(int tripId, string imagePath);
+
+        //void DeleteTrip(int tripId);
     }
 }

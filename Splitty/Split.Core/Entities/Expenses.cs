@@ -9,7 +9,7 @@ namespace Split.Core.Entities
     public class Expenses
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
+        public string? Name { get; set; } 
         public decimal Amount { get; set; }
         public int TripID { get; set; }
         public Trip? Trip { get; set; }

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Split.Core.Entities;
+using Split.Core.DTOs; 
 
 namespace Split.BLL.Services
 {
@@ -29,6 +30,8 @@ namespace Split.BLL.Services
             return _context.Trips
                 .Include(t => t.Members)
                 .Include(t => t.Expense)
+                    .ThenInclude(e => e.Shares) // 2. CRUCIAL: Added ThenInclude so the algorithm can see the exact amounts owed
+                .Include(t => t.Images)
                 .FirstOrDefault(t => t.Id == id);
         }
 
@@ -37,7 +40,6 @@ namespace Split.BLL.Services
             var newTrip = new Trip
             {
                 Name = name,
-
             };
 
             if (memberNames != null)
@@ -57,41 +59,118 @@ namespace Split.BLL.Services
             _context.SaveChanges();
         }
 
-        public void AddExpense(int tripId, string Description, int paidById, decimal amount, List<int> splitWithMemebrIDs)
+        // 3. Removed the "decimal amount" parameter
+        public void AddExpense(int tripId, string Description, int paidById, Dictionary<int, decimal> memberAmounts)
         {
-            var trip = _context.Trips.Include(t => t.Members).FirstOrDefault(t => t.Id == tripId);
-            if (trip == null || splitWithMemebrIDs == null || !splitWithMemebrIDs.Any())
-            {
-                return;
-            }
-            var expense = new Expenses
+            decimal totalAmount = memberAmounts.Values.Sum();
+
+            var newExpense = new Expenses // Assuming your entity is named 'Expense'
             {
                 Name = Description,
-                Amount = amount,
+                Amount = totalAmount, // 4. Using the calculated total here!
                 TripID = tripId,
-                MemberId = paidById
+                MemberId = paidById,
+                Shares = new List<ExpenseShare>()
             };
 
-            foreach (var splitId in splitWithMemebrIDs)
+            foreach (var item in memberAmounts)
             {
-                expense.Shares.Add(new ExpenseShare
+                newExpense.Shares.Add(new ExpenseShare // 5. Fixed variable name to newExpense and 'Share' to 'Shares'
                 {
-                    MemberId = splitId,
-                    OwnedAmount = amount / splitWithMemebrIDs.Count
+                    MemberId = item.Key,
+                    OwnedAmount = item.Value
                 });
             }
 
-            _context.Expenses.Add(expense);
+            _context.Expenses.Add(newExpense);
             _context.SaveChanges();
         }
 
-        public void DeleteTrip(int tripId)
+        public List<DebtSettelment> CalculateOptimizedSettlements(int tripId)
+        {
+            var trip = GetTripById(tripId);
+            if (trip == null || trip.Members == null) return new List<DebtSettelment>();
+
+            var balances = new Dictionary<int, decimal>();
+
+            foreach (var member in trip.Members)
+            {
+                decimal totalPaid = trip.Expense?.Where(e => e.MemberId == member.Id).Sum(e => e.Amount) ?? 0;
+                decimal totalOwed = trip.Expense?.SelectMany(e => e.Shares).Where(s => s.MemberId == member.Id).Sum(s => s.OwnedAmount) ?? 0;
+                balances[member.Id] = totalPaid - totalOwed;
+            }
+
+            var debtors = balances.Where(b => b.Value < -0.01m)
+                                  .Select(b => (MemberId: b.Key, Amount: Math.Abs(b.Value)))
+                                  .OrderByDescending(b => b.Amount).ToList();
+
+            var creditors = balances.Where(b => b.Value > 0.01m)
+                                    .Select(b => (MemberId: b.Key, Amount: b.Value))
+                                    .OrderByDescending(b => b.Amount).ToList();
+
+            var settlements = new List<DebtSettelment>();
+            int i = 0, j = 0;
+
+            while (i < debtors.Count && j < creditors.Count)
+            {
+                decimal settledAmount = Math.Min(debtors[i].Amount, creditors[j].Amount);
+
+                settlements.Add(new DebtSettelment
+                {
+                    FromName = trip.Members.First(m => m.Id == debtors[i].MemberId).Name,
+                    ToName = trip.Members.First(m => m.Id == creditors[j].MemberId).Name,
+                    Amount = settledAmount
+                });
+
+                debtors[i] = (debtors[i].MemberId, debtors[i].Amount - settledAmount);
+                creditors[j] = (creditors[j].MemberId, creditors[j].Amount - settledAmount);
+
+                if (debtors[i].Amount < 0.01m) i++;
+                if (creditors[j].Amount < 0.01m) j++;
+            }
+
+            return settlements;
+        }
+
+
+        public void AddMemberToTrip(int tripId, string memberName)
+        {
+
+            if (string.IsNullOrWhiteSpace(memberName)) return;
+
+            var trip = _context.Trips.Include(t => t.Members).FirstOrDefault(t => t.Id == tripId);
+
+            if (trip != null)
+            {
+                trip.Members.Add(new Member
+                {
+                    Name = memberName.Trim()
+                });
+
+                _context.SaveChanges();
+            }
+
+
+        }
+
+        public void AddReciptImage(int tripId, string imagePath)
+        {
+            var newImage = new ReciptImage
+            {
+                TripId = tripId,
+                ImagePath = imagePath
+            };
+
+            _context.Set<ReciptImage>().Add(newImage);
+            _context.SaveChanges();
+        }
+
+        /*public void DeleteTrip(int tripId)
         {
             var expenses = _context.Expenses.Where(e => e.TripID == tripId).ToList();
 
             foreach (var expense in expenses)
             {
-                
                 var shares = _context.ExpenseShares.Where(s => s.ExpenseId == expense.Id).ToList();
                 _context.ExpenseShares.RemoveRange(shares);
             }
@@ -108,6 +187,6 @@ namespace Split.BLL.Services
             }
 
             _context.SaveChanges();
-        }
+        }*/
     }
 }
